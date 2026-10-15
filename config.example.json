@@ -1,0 +1,18 @@
+{
+  "poll_interval_seconds": 300,
+  "notification_email": "",
+  "mailbox": {
+    "folder": "INBOX",
+    "allowed_senders": []
+  },
+  "criteria": {
+    "include_any": [],
+    "include_all": [],
+    "exclude_any": [],
+    "min_rent": null,
+    "max_rent": null,
+    "min_surface": null,
+    "max_surface": null,
+    "min_rooms": null
+  }
+}
