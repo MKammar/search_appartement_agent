@@ -16,7 +16,7 @@ From the project folder:
 python -m rental_monitor init
 ```
 
-Edit `config.json` with your criteria and set `notification_email` to the recipient address. This is user configuration, not a value fixed in the app. Set the IMAP/SMTP host, login, app-specific password, and verified sender address in `.env`. Do not commit `.env` or `config.json`; both are ignored by Git. In each listing website, create its own rental-only saved search and enable email alerts. Optionally fill `mailbox.allowed_senders` with the sender addresses/domains used by those alert emails so unrelated messages are ignored.
+Edit `config.json` with your criteria and set `notification_email` to the recipient address. This is user configuration, not a value fixed in the app. For Gmail, enable IMAP in Gmail settings and use a Google App Password (requires 2-Step Verification) for both `IMAP_PASSWORD` and `SMTP_PASSWORD` in `.env`; use your Gmail address for the IMAP/SMTP users and `SMTP_FROM`. Never use your normal Google password. Do not commit `.env` or `config.json`; both are ignored by Git. In each listing website, create its own rental-only saved search and enable email alerts. Optionally fill `mailbox.allowed_senders` with the sender addresses/domains used by those alert emails so unrelated messages are ignored.
 
 Criteria:
 

@@ -195,7 +195,6 @@ class SmtpTests(unittest.TestCase):
             "SMTP_USER": "sender@test",
             "SMTP_PASSWORD": "secret",
             "SMTP_FROM": "sender@test",
-            "SMTP_TO": "recipient@test",
         },
     )
     @patch("rental_monitor.core.smtplib.SMTP")
